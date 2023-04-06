@@ -1,8 +1,8 @@
 # tgpt
 A streaming Python CLI leveraging OpenAI GPT for code assistance, including code verification, rewriting, and general queries. Get started by obtaining an API key from OpenAI, running install_tgpt.sh, and then tgpt.
 
-# Quick & Easy Code Assistance
-Verify code with the .verify command:
+## Quick & Easy Code Assistance
+Besides being able to answer arbitrary queries with `tgpt <query>`, you can also use the tool to verify and rewrite code. To verify code, simply type the .verify command followed by the file you want to verify:
 ```
 bash
 tgpt .verify file_to_verify.py
@@ -14,7 +14,8 @@ tgpt .rewrite file_to_rewrite.py
 ```
 Rewritten code will be saved as a .draft file, e.g., file_to_rewrite.py.draft. Just type your questions or commands to interact with the tool and enjoy real-time GPT-powered assistance!
 
-# Quickstart
+
+## Quickstart
 
 This quickstart guide walks you through setting up the `tgpt` project on your machine using the provided `install_tgpt.sh`.
 
