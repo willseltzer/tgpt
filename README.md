@@ -2,7 +2,7 @@
 A streaming Python CLI leveraging OpenAI GPT for code assistance, including code verification, rewriting, and general queries.
 
 ## Quick & Easy Code Assistance
-Besides being able to answer arbitrary queries with `tgpt <query>`, you can also use the tool to verify and rewrite code. To verify code, simply type the .verify command followed by the file you want to verify:
+Besides being able to answer arbitrary queries with `tgpt <query>`, you can also use the tool to verify and rewrite code. To verify code, simply type the `.verify` command followed by the file you want to verify:
 ```bash
 tgpt .verify file_to_verify.py
 ```
