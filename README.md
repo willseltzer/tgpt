@@ -43,14 +43,3 @@ Now, you can use the `tgpt` command as an alias for running the `tgpt.py` script
 ```bash
 tgpt your_input_here
 ```
-
-This script performs the following tasks:
-
-1. Installs Poetry, a Python dependency management tool.
-2. Searches for the 'tgpt' directory and navigates to it.
-3. Sets Python 3.11 as the version for the Poetry environment.
-4. Installs Python dependencies using Poetry.
-5. If not already set, prompts for your OpenAI API Key and adds it to .zshrc.
-6. Adds an alias 'tgpt' in .zshrc for easy script execution.
-
-After running this script, reload your shell with `source ~/.zshrc`. Now you can use the 'tgpt' command.
