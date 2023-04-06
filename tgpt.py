@@ -17,7 +17,7 @@ from prompt_toolkit.formatted_text import FormattedText
 from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.styles import Style
 from prompt_toolkit import PromptSession
-from system_prompt import code_min_token
+from system_prompt import helpful_assistant
 from system_prompt import SystemPrompt
 
 
@@ -133,7 +133,7 @@ def code_from_file(file_path: str) -> str:
 
 if __name__ == "__main__":
     llm = GPT(
-        system_prompt=code_min_token,
+        system_prompt=help,
         model="gpt-4",
     )
 
