@@ -45,8 +45,10 @@ class GPT:
     def _add_user_message(self, message: str) -> None:
         self.messages.append({"content": message, "role": "user"})
 
-    def _add_assistant_message(self, message: dict[str, str]) -> None:
-        self.messages.append(message)
+    def _add_assistant_message(self, message) -> None:
+        if "role" not in message or "content" not in message:
+            return
+        self.messages.append({"content": message["content"], "role": message["role"]})
 
     def __call__(self, prompt: str, stream=True) -> str:
         self._add_user_message(prompt)
