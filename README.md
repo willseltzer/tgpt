@@ -36,7 +36,7 @@ To set up and run the `tgpt` project, follow these steps:
    ```bash
    source ~/.zshrc
    ```
-6. Open the `prompts.py` file and populate the `REWRITE_CODE_PROMPT` and `VERIFY_CODE_PROMPT` variables before running the script.**
+6. Open the `prompts.py` file and populate the `REWRITE_CODE_PROMPT` and `VERIFY_CODE_PROMPT` variables before running the script. You may also want to modify your system prompt in `system_prompt.py`**
 
 Now, you can use the `tgpt` command as an alias for running the `tgpt.py` script with user input:
 
