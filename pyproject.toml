@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tgpt"
+version = "0.1.0"
+description = ""
+authors = ["Will Seltzer"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^0.27.2"
+pyperclip = "^1.8.2"
+halo = "^0.0.31"
+prompt-toolkit = "^3.0.38"
+tenacity = "^8.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
