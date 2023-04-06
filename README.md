@@ -1,5 +1,18 @@
 # tgpt
-A Python command-line interface that uses OpenAI GPT to provide various code-related assistance. Features include code rewriting, verification, and general answers to code-related questions. You can interact with the tool by typing questions or commands, and it streams responses from GPT. To use it, obtain an API key from OpenAI, run `install_tgpt.sh`, and then `tgpt`.
+A streaming Python CLI leveraging OpenAI GPT for code assistance, including code verification, rewriting, and general queries. Get started by obtaining an API key from OpenAI, running install_tgpt.sh, and then tgpt.
+
+# Quick & Easy Code Assistance
+Verify code with the .verify command:
+```
+bash
+tgpt .verify file_to_verify.py
+```
+Rewrite code with the .rewrite command:
+```
+bash
+tgpt .rewrite file_to_rewrite.py
+```
+Rewritten code will be saved as a .draft file, e.g., file_to_rewrite.py.draft. Just type your questions or commands to interact with the tool and enjoy real-time GPT-powered assistance!
 
 # Quickstart
 
@@ -23,7 +36,7 @@ To set up and run the `tgpt` project, follow these steps:
    source ~/.zshrc
    ```
 
-**6. Open the `prompts.py` file and populate the `CODE_PROMPT`, `REWRITE_CODE_PROMPT`, and `VERIFY_CODE_PROMPT` variables before running the script.**
+**6. Open the `prompts.py` file and populate the `REWRITE_CODE_PROMPT`, and `VERIFY_CODE_PROMPT` variables before running the script.**
 
 Now, you can use the `tgpt` command as an alias for running the `tgpt.py` script with user input:
 

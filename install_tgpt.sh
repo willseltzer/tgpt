@@ -30,7 +30,7 @@ poetry install
 # Check if the OPENAI_API_KEY already exists in .zshrc
 if ! grep -q '^export OPENAI_API_KEY=' ~/.zshrc; then
   # Prompt the user for the OpenAI API key
-  echo "Enter your OpenAI API Key:"
+  echo "Get your OpenAI API Key from https://platform.openai.com/account/api-keys and enter it here:"
   read OPENAI_API_KEY
   echo "export OPENAI_API_KEY=${OPENAI_API_KEY}" >> ~/.zshrc
   echo "OPENAI_API_KEY added to .zshrc."
